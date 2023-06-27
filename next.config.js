@@ -6,6 +6,11 @@ const nextConfig = {
   images: {
     domains: ["avatars.githubusercontent.com", "lh3.googleusercontent.com"],
   },
+  modularizeImports: {
+    "react-icons": {
+      transform: "react-icons/{{member}}",
+    },
+  },
 };
 
 module.exports = nextConfig;
